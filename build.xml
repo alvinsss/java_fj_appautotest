@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="TestJunit" basedir="." default="junit">
+
+	<!--  定义JUnit报告文件产生的文件路径 -->
+	<property name="report.dir" value="report" />
+	<property name="report.xml" value="report/xml" />
+	<property name="report.html" value="report/html" />
+	<!--编译后的classes文件路径-->
+	<property name="build.dir" value="classes" />
+	<!--test文件路径-->
+	<property name="test.dir" value="test" />
+	<!--src文件路径-->
+	<property name="src.dir" value="src" />
+	<!--jar包文件路径-->
+	<property name="lib.dir" value="lib" />
+	
+
+	<!--创建需要的文件路径-->
+	<target name="init">
+	    <delete dir="${build.dir}" />
+		<delete dir="${report.dir}" />
+		<mkdir dir="${build.dir}" />
+		<mkdir dir="${report.dir}" />
+		<mkdir dir="${report.xml}" />
+		<mkdir dir="${report.html}" />
+	</target>
+	
+	<path id="all_lib">
+			<fileset dir="${lib.dir}">
+				<include name="*.jar" />
+			</fileset>
+		</path>
+		
+	<!--编译src类-->
+	<target name="compilesrc" depends="init">
+		<javac srcdir="${src.dir}" destdir="${build.dir}" includeAntRuntime="false" encoding="UTF-8" >
+		<classpath>
+				<fileset dir="${lib.dir}">
+					<include name="*.jar" />
+				</fileset>
+			</classpath>
+			</javac>
+	</target>
+
+	<!--编译test类-->
+	<target name="compiletest" depends="compilesrc">
+		<javac srcdir="${test.dir}" destdir="${build.dir}"  includeAntRuntime="false" encoding="UTF-8">
+			<classpath>
+				<fileset dir="${lib.dir}">
+					<include name="*.jar" />
+				</fileset>
+			</classpath>
+		</javac>
+	</target>
+		
+	<!--运行test类-->
+	<target name="runtest" depends="compiletest">
+		<!--配置需要执行的junit-->
+		<junit fork="true" forkmode="once" printsummary="withOutAndErr" errorproperty="test.error" showoutput="on">
+			<classpath>
+				<pathelement location="lib/junit.jar" />
+				<pathelement location="lib/selenium-server-standalone-2.21.0.jar" />
+				<pathelement path="${build.dir}" />
+			</classpath>
+			<formatter type="xml" />
+			<sysproperty key="file.encoding" value="UTF-8" />
+			<batchtest todir="${report.xml}" haltonfailure="no">
+				<fileset dir="${build.dir}">
+					<include name="**/Test*.class" />
+					<include name="**/*Test.class" />
+				</fileset>
+			</batchtest>
+		</junit>
+	</target>
+	
+	<target name="junit" depends="runtest">
+		<junitreport todir="${report.xml}">
+			<fileset dir="${report.xml}">
+				<include name="*" />
+			</fileset>
+			<report format="frames" todir="${report.html}" />
+		</junitreport>
+	</target>
+
+</project>
