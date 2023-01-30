@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1449133969067_1" label="fengjr-automation" name="fengjr-automation">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/fengjr-rest-api" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/fengjr-android-test" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/fengjr-mobile-test" type="4"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1442496446693_0" label="Window Working Set" name="Aggregate for window 1442496446693"/>
+</workingSetManager>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j='http://jakarta.apache.org/log4j/'>
+	<renderer renderedClass="com.fengjr.android.lexicon.imp.LoanItem"
+		renderingClass="com.fengjr.android.log4j.LoanRenderer" ></renderer>
+<!-- 	<renderer renderedClass="com.fengjr.model.Loan"
+		renderingClass="com.fengjr.android.log4j.LoanRenderer" /> -->
+	<appender name="dataAccessLogger" class="org.apache.log4j.ConsoleAppender">
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="conversionPattern" value="%-d{yyyy-MM-dd HH:mm:ss} [%t] %p %c %x - %m%n" />
+		</layout>
+	</appender>
+
+	<logger name="com.fengjr.android.rest" additivity="false">
+		<level value="ALL" />
+		<appender-ref ref="dataAccessLogger" />
+	</logger>
+
+	<logger name="com.fengjr.android.lexicon.imp.LoanDetails">
+		<level value="ALL" />
+		<appender-ref ref="dataAccessLogger" />
+	</logger>
+
+	<logger name="com.fengjr.android.utils.Navigator">
+		<level value="ALL" />
+		<appender-ref ref="dataAccessLogger" />
+	</logger>
+	
+	<logger name="com.fengjr.android.lexicon.imp.LoanItem">
+		<level value="ALL" />
+		<appender-ref ref="dataAccessLogger" />
+	</logger>
+	
+	<logger name="com.fengjr.android.lexicon.imp.LoanList">
+		<level value="ALL" />
+		<appender-ref ref="dataAccessLogger" />
+	</logger>
+	
+	<logger name="com.fengjr.android.lexicon.imp.UiScroller">
+		<level value="ALL" />
+		<appender-ref ref="dataAccessLogger" />
+	</logger>
+	
+<!-- 	<root> 
+		<level value="INFO" /> <appender-ref ref="dataAccessLogger" /> 
+	</root> -->
+</log4j:configuration>

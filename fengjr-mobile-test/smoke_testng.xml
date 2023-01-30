@@ -1,0 +1,36 @@
+<suite name="fengjr-android-test" parallel="tests" thread-count="1">
+    <parameter name="app-url" value="http://10.255.0.166/job/android-client-release/lastSuccessfulBuild/artifact/mobile/website/mobile-website-v1.2.2-release.apk"/>
+    <parameter name="app-package" value="com.fengjr.mobile"/>
+    <parameter name="app-activity" value="com.fengjr.mobile.act.impl.Splash_"/>
+    <parameter name="login-mobile-number" value="13011241230" />
+    <parameter name="login-password" value="environment"/>
+    <test name="Nexus5">
+	    <parameter name="device-name" value="Nexus5"/>
+	    <parameter name="platform-name" value="android"/>
+	    <parameter name="platform-version" value="4.2"/>
+		<classes>
+			<parameter name="unregist-login-name" value="zhanghf"/>
+			<parameter name="unregist-mobile-number" value="130011241230"/>
+	   		<parameter name="unregist-password" value="environment"/>
+	   		
+			<parameter name="mobile-number" value="13011241230"/>
+			<parameter name="password" value="environment"/>
+			
+			<parameter name="locked-mobile-number" value="13011241230"/>
+	   		<parameter name="locked-password" value="environment"/>
+	   		
+	   		<parameter name="mobile-number-switched" value="15210146579" />
+	   		<parameter name="password-switched" value="qpalzm"/>
+	   		
+	   		
+ 	   		<class name="com.fengjr.mobile.test.TestCaseBase"/>
+ 	   		<class name="com.fengjr.mobile.test.TestLogin"/>
+ 	   		<class name="com.fengjr.mobile.test.TestLoanList"/>
+ 	   		<class name="com.fengjr.mobile.test.TestPersonalFunds"/>
+ 	   		<class name="com.fengjr.mobile.test.TestFundsRecord"/>
+ 	   		<class name="com.fengjr.mobile.test.TestRepaymentPlan"/>
+ 	   		<class name="com.fengjr.mobile.test.TestRepaymentQuery"/>
+	   		<class name="com.fengjr.mobile.test.TestPatternModified"/>
+		</classes>
+	</test> 
+</suite>

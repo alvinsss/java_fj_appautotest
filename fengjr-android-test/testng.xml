@@ -1,0 +1,43 @@
+<suite name="fengjr-android-test" parallel="tests" thread-count="1">
+	<parameter name="selenium-url" value="http://10.255.2.50:7777/wd/hub" />
+    <!-- <parameter name="app-url" value="http://10.255.0.166/job/android-client-release/ws/mobile/channel-fengjr/mobile-channel-fengjr-release.apk"/> -->
+    <parameter name="app-url" value="http://10.255.0.166/job/android-client-debug/lastSuccessfulBuild/artifact/mobile/bin/mobile-website-v1.0.0-debug.apk" />
+    <parameter name="app-package" value="com.fengjr.mobile"/>
+    <parameter name="app-activity" value="com.fengjr.mobile.act.impl.Splash_"/>
+    <parameter name="login-mobile-number" value="13011241230" />
+    <parameter name="login-password" value="environment"/>
+    <test name="HUAWEI">
+	    <parameter name="device-name" value="Nexus5"/>
+	    <parameter name="platform-name" value="ANDROID"/>
+	    <parameter name="platform-version" value="4.2"/>
+		<classes>
+			<!-- testRegister parameters -->
+			<parameter name="unregist-login-name" value="zhanghf"/>
+			<parameter name="unregist-mobile-number" value="130011241230"/>
+	   		<parameter name="unregist-password" value="environment"/>
+	   		<!-- testLogin parameters -->
+			<parameter name="mobile-number" value="13011241230"/>
+			<parameter name="password" value="environment"/>
+			<!-- testLockedAccoutLogin parameters -->
+			<parameter name="locked-mobile-number" value="13011241230"/>
+	   		<parameter name="locked-password" value="environment"/>
+	   		<!-- testSwitchAccount -->
+	   		<parameter name="mobile-number-switched" value="15210146579" />
+	   		<parameter name="password-switched" value="qpalzm"/>
+	   		
+	   		<!-- release -->
+	   		<class name="com.fengjr.android.test.TestCaseBase"/>
+	   		<class name="com.fengjr.android.test.ARegister">
+				<methods>
+	    			<exclude name="testRegister"/>
+	    			<exclued name="testLockedAccoutLogin"/>
+				</methods>
+	   		</class>
+	   		<class name="com.fengjr.android.test.BPatternLock"/>
+	   		<class name="com.fengjr.android.test.CPatternForget"/>
+	   		<class name="com.fengjr.android.test.DLoansTest"/>
+			<class name="com.fengjr.android.test.EFundingTest"/>
+	   		<class name="com.fengjr.android.test.FPersonalCenter"/>
+		</classes>
+	</test>
+</suite>

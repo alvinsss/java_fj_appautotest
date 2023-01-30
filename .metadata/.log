@@ -1,0 +1,130 @@
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-12-03 17:12:52.796
+!MESSAGE Unable to add org/apache/maven/plugins/maven-surefire-plugin/2.12.4/maven-surefire-plugin-2.12.4.pom
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-12-03 17:12:53.152
+!MESSAGE The POM for org.codehaus.plexus:plexus-utils:jar:1.5.1 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-12-03 17:12:54.397
+!MESSAGE The artifact xstream:xstream:jar:1.2.2 has been relocated to com.thoughtworks.xstream:xstream:jar:1.2.2
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-12-03 17:12:55.612
+!MESSAGE The artifact xstream:xstream:jar:1.2.2 has been relocated to com.thoughtworks.xstream:xstream:jar:1.2.2
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-12-03 17:12:57.136
+!MESSAGE The artifact xstream:xstream:jar:1.2.2 has been relocated to com.thoughtworks.xstream:xstream:jar:1.2.2
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-12-03 17:12:57.214
+!MESSAGE Unable to add com/fengjr/automation/fengjr-mobile-test/1.0-SNAPSHOT/fengjr-mobile-test-1.0-SNAPSHOT.pom
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-12-03 17:12:57.216
+!MESSAGE Unable to add com/fengjr/rest/fengjr-rest-api/1.0-SNAPSHOT/fengjr-rest-api-1.0-SNAPSHOT.pom
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-12-03 17:12:57.224
+!MESSAGE Unable to add com/fengjr/automation/fengjr-android-test/1.0-SNAPSHOT/fengjr-android-test-1.0-SNAPSHOT.pom
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-12-03 17:12:57.623
+!MESSAGE Can't save classpath container state for fengjr-mobile-test
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-12-03 17:12:57.687
+!MESSAGE Can't save classpath container state for fengjr-rest-api
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-12-03 17:12:57.770
+!MESSAGE Can't save classpath container state for fengjr-android-test
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-12-03 17:12:58.928
+!MESSAGE The artifact xstream:xstream:jar:1.2.2 has been relocated to com.thoughtworks.xstream:xstream:jar:1.2.2
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-12-03 17:13:00.376
+!MESSAGE Can't save classpath container state for fengjr-rest-api
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-12-03 17:13:00.615
+!MESSAGE Can't save classpath container state for fengjr-android-test
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-12-03 17:13:00.937
+!MESSAGE Can't save classpath container state for fengjr-mobile-test
+
+!ENTRY org.eclipse.core.resources 4 566 2015-12-03 17:13:01.187
+!MESSAGE Could not save master table to file '/Users/Xujiajia/automation/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources'.
+!STACK 0
+java.io.FileNotFoundException: /Users/Xujiajia/automation/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources (No such file or directory)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:221)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:142)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:45)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:41)
+	at org.eclipse.core.internal.resources.SaveManager.saveMasterTable(SaveManager.java:1264)
+	at org.eclipse.core.internal.resources.SaveManager.saveMasterTable(SaveManager.java:1255)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1232)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1144)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:51)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-12-03 17:13:01.264
+!MESSAGE The artifact xstream:xstream:jar:1.2.2 has been relocated to com.thoughtworks.xstream:xstream:jar:1.2.2
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-12-03 17:13:01.551
+!MESSAGE The artifact xstream:xstream:jar:1.2.2 has been relocated to com.thoughtworks.xstream:xstream:jar:1.2.2
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-12-03 17:13:04.975
+!MESSAGE The artifact xstream:xstream:jar:1.2.2 has been relocated to com.thoughtworks.xstream:xstream:jar:1.2.2
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-12-03 17:13:05.047
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-12-03 17:13:05.079
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-12-03 17:13:07.361
+!MESSAGE The artifact xstream:xstream:jar:1.2.2 has been relocated to com.thoughtworks.xstream:xstream:jar:1.2.2
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-12-03 17:13:07.434
+!MESSAGE Unable to add com/fengjr/automation/fengjr-mobile-test/1.0-SNAPSHOT/fengjr-mobile-test-1.0-SNAPSHOT.pom
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-12-03 17:13:07.530
+!MESSAGE Can't save classpath container state for fengjr-mobile-test
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-12-03 17:13:08.617
+!MESSAGE The artifact xstream:xstream:jar:1.2.2 has been relocated to com.thoughtworks.xstream:xstream:jar:1.2.2
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-12-03 17:13:09.914
+!MESSAGE The artifact xstream:xstream:jar:1.2.2 has been relocated to com.thoughtworks.xstream:xstream:jar:1.2.2
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-12-03 17:13:10.404
+!MESSAGE The artifact xstream:xstream:jar:1.2.2 has been relocated to com.thoughtworks.xstream:xstream:jar:1.2.2
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-12-03 17:13:10.580
+!MESSAGE The artifact xstream:xstream:jar:1.2.2 has been relocated to com.thoughtworks.xstream:xstream:jar:1.2.2
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-12-03 17:13:10.755
+!MESSAGE Unable to add com/fengjr/automation/fengjr-mobile-test/1.0-SNAPSHOT/fengjr-mobile-test-1.0-SNAPSHOT.pom
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-12-03 17:13:10.757
+!MESSAGE Unable to add com/fengjr/rest/fengjr-rest-api/1.0-SNAPSHOT/fengjr-rest-api-1.0-SNAPSHOT.pom
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-12-03 17:13:10.761
+!MESSAGE Unable to add com/fengjr/automation/fengjr-android-test/1.0-SNAPSHOT/fengjr-android-test-1.0-SNAPSHOT.pom
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-12-03 17:13:10.849
+!MESSAGE Can't save classpath container state for fengjr-mobile-test
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-12-03 17:13:10.885
+!MESSAGE Can't save classpath container state for fengjr-rest-api
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-12-03 17:13:10.954
+!MESSAGE Can't save classpath container state for fengjr-android-test
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-12-03 17:13:11.193
+!MESSAGE The artifact xstream:xstream:jar:1.2.2 has been relocated to com.thoughtworks.xstream:xstream:jar:1.2.2
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-12-03 17:13:11.216
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-12-03 17:13:11.223
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-12-03 17:13:11.812
+!MESSAGE The artifact xstream:xstream:jar:1.2.2 has been relocated to com.thoughtworks.xstream:xstream:jar:1.2.2
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-12-03 17:13:12.354
+!MESSAGE The artifact xstream:xstream:jar:1.2.2 has been relocated to com.thoughtworks.xstream:xstream:jar:1.2.2
